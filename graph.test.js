@@ -136,6 +136,7 @@ describe("DFS", function() {
     graph.addEdge(W, T);
 
     var result = JSON.stringify(graph.depthFirstSearch(S));
+    console.log(result);
     var validResult =
       result ===
         JSON.stringify(["S", "U", "V", "W", "T", "R", "Q", "Y", "X", "P"]) ||
